@@ -21,12 +21,13 @@ resource "yandex_compute_instance" "default" {
   folder_id   = "b1gnr501vl8p8v9vt5ag"
 
   resources {
-    cores  = 2
+    cores  = 4
     memory = 4
   }
 
   boot_disk {
     disk_id = yandex_compute_disk.default.id
+
   }
 
   network_interface {
@@ -53,9 +54,10 @@ resource "yandex_compute_disk" "default" {
   name     = "disk-name"
   type     = "network-ssd"
   zone     = "ru-central1-a"
+  size     = "30"
   image_id = "fd824arl9rjgb976kkb1" // идентификатор образа Ubuntu
   folder_id = "b1gnr501vl8p8v9vt5ag"
-
+  
   labels = {
     environment = "test"
   }
