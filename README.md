@@ -16,8 +16,8 @@ ___
     https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli?in=terraform%2Faws-get-started
 
 Клонируйте репозиторий, перейдите в директорию /terraform проекта и вполните инициализацию terraform:
-    cd terraform-infr/terraform
-    terraform init
+    - cd terraform-infr/terraform
+    - terraform init
 
 Выполните запуск изменений:
-    terraform apply
+    - terraform apply
